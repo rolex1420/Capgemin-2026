@@ -17,13 +17,11 @@ public class CheckNumber {
                 }
             }else{
                 System.out.println("negative");
+                System.out.println();
             }
         }
         if(arr[0]==arr[arr.length-1])
             System.out.println("they are equal");
-        if(arr[0]>arr[arr.length-1]){
-            System.out.println("greater value is -"+arr[0]);
-            System.out.println("less value is-"+arr[arr.length-1]);
-        }
+
     }
 }
