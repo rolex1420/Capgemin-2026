@@ -1,0 +1,46 @@
+import java.util.*;
+
+class Course {
+    String name;
+    Professor professor;
+
+    Course(String name) {
+        this.name = name;
+    }
+
+    void assignProfessor(Professor p) {
+        professor = p;
+    }
+}
+
+class Student {
+    String name;
+    List<Course> courses = new ArrayList<>();
+
+    Student(String name) {
+        this.name = name;
+    }
+
+    void enrollCourse(Course c) {
+        courses.add(c);
+    }
+}
+
+class Professor {
+    String name;
+
+    Professor(String name) {
+        this.name = name;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s = new Student("Neha");
+        Professor p = new Professor("Dr. Mehta");
+        Course c = new Course("OOP");
+
+        c.assignProfessor(p);
+        s.enrollCourse(c);
+    }
+}
