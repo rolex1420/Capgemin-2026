@@ -10,9 +10,6 @@ public class Main {
         studentlist.addBeginning(s4);
         studentlist.addBeginning(s1);
         studentlist.addEnd(s3);
-        studentlist.displayAllStudent();
-        studentlist.delete(2);
-        studentlist.displayAllStudent();
         studentlist.searchStudent(3);
 
     }
