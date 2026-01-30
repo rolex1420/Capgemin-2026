@@ -3,11 +3,9 @@ import java.util.Stack;
 class QueueUsingStacks {
     Stack<Integer> s1 = new Stack<>();
     Stack<Integer> s2 = new Stack<>();
-
     void enqueue(int x) {
         s1.push(x);
     }
-
     int dequeue() {
         if (s2.isEmpty()) {
             while (!s1.isEmpty()) {
@@ -16,6 +14,7 @@ class QueueUsingStacks {
         }
         return s2.pop();
     }
-    
 }
+
+
 
